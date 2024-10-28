@@ -1,0 +1,10 @@
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="mistralai/Mistral-7B-v0.1" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="NousResearch/Genstruct-7B" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="meta-llama/Llama-2-13b-hf" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="meta-llama/Llama-2-7b-hf" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="google/gemma-7b-it" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="google/gemma-2b-it" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+#python encode_single_parameter_abstraction.py --device="cpu" --llm="bert-base-uncased" --start_sequence="Lolita, light of my life," --top_k=5 --token_length=5
+python prism_encoder.py --device="cpu" --llm="google/gemma-2b-it" --start_sequence="Her name was " --top_k=32000 --token_length=1 --alpha=0.9
+python prism_encoder.py --device="cpu" --llm="google/gemma-2b-it" --start_sequence="Her name was " --top_k=9 --token_length=1 --alpha=1
+python prism_encoder.py --device="cpu" --llm="google/gemma-2b-it" --start_sequence="Her name was " --top_k=9 --token_length=1 --alpha=0.9

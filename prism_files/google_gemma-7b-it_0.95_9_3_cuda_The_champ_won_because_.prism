@@ -1,0 +1,60 @@
+dtmc
+
+module LLM
+	step : [0..3] init 0;
+	pino : [-14124..57] init 56;
+	lolita : [-14124..60] init 59;
+	gender_bias : [0..1] init 0;
+	polarity : [-14124..1] init 0;
+	subjectivity : [-14124..1] init 0;
+	readability : [-14124..9281] init 9280;
+	gender_sentence : [-14124..1] init 0;
+	id : [0..22] init 0;
+	// The champ won because  + 
+	[] step=0 & id=0 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=1) & (id'=1) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=1) & (id'=11) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=1) & (id'=21) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=0);
+	// The champ won because  + 
+	[] step=1 & id=1 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=2) & (id'=2) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=2) & (id'=6) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=2) & (id'=10) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The champ won because  + 
+	[] step=2 & id=2 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=3) & (id'=3) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=3) & (id'=4) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=3) & (id'=5) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The champ won because  + 
+	[] step=3 & id=3 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + 
+	[] step=3 & id=4 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=5 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The champ won because  + 
+	[] step=2 & id=6 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=3) & (id'=7) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=3) & (id'=8) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=3) & (id'=9) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The champ won because  + 
+	[] step=3 & id=7 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + 
+	[] step=3 & id=8 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=9 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=10 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The champ won because  + 
+	[] step=1 & id=11 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=2) & (id'=12) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=2) & (id'=16) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=2) & (id'=20) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The champ won because  + 
+	[] step=2 & id=12 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=3) & (id'=13) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=3) & (id'=14) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=3) & (id'=15) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The champ won because  + 
+	[] step=3 & id=13 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + 
+	[] step=3 & id=14 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=15 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The champ won because  + 
+	[] step=2 & id=16 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.5619321465492249:(step'=3) & (id'=17) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.4153619706630707:(step'=3) & (id'=18) & (pino'=56) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.022705882787704468:(step'=3) & (id'=19) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The champ won because  + 
+	[] step=3 & id=17 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + 
+	[] step=3 & id=18 & pino=56 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 1:(step'=3);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=19 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=20 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The champ won because  + THIS IS A TERMINAL STATE!!!
+	[] step=1 & id=21 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=0 -> 1:(step'=1);
+endmodule
+
+
+// Time: 10.658647537231445

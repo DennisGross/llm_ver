@@ -1,0 +1,100 @@
+Storm 1.8.1
+
+Date: Fri Mar 29 18:34:36 2024
+Command line arguments: --prism google_gemma-7b-it_0.9_5_4_cuda_The_exam_was.prism --prop 'P=? [F (polarity>=30)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.075s.
+
+Time for model construction: 0.055s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	185
+Transitions: 	324
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (polarity >= 30) -> 3 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (polarity >= 30)] ...
+Result (for initial states): 0.1008370031
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Fri Mar 29 18:34:36 2024
+Command line arguments: --prism meta-llama_Llama-2-7b-hf_0.9_5_4_cpu_The_exam_was.prism --prop 'P=? [F (polarity>=30)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.178s.
+
+Time for model construction: 0.125s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	690
+Transitions: 	1252
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (polarity >= 30) -> 11 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (polarity >= 30)] ...
+Result (for initial states): 0.01320527599
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Fri Mar 29 18:34:36 2024
+Command line arguments: --prism google_gemma-7b-it_0.9_5_4_cuda_The_exam_was.prism --prop 'P=? [F (polarity<=-30 & polarity!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.047s.
+
+Time for model construction: 0.050s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	241
+Transitions: 	422
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((polarity <= -(30)) & (polarity != -(14124))) -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((polarity <= -(30)) & (polarity != -(14124)))] ...
+Result (for initial states): 0.0002710995227
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Fri Mar 29 18:34:37 2024
+Command line arguments: --prism meta-llama_Llama-2-7b-hf_0.9_5_4_cpu_The_exam_was.prism --prop 'P=? [F (polarity<=-30 & polarity!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.146s.
+
+Time for model construction: 0.136s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	768
+Transitions: 	1395
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((polarity <= -(30)) & (polarity != -(14124))) -> 6 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((polarity <= -(30)) & (polarity != -(14124)))] ...
+Result (for initial states): 0.002784375941
+Time for model checking: 0.000s.

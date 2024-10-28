@@ -1,0 +1,456 @@
+BERT
+Storm 1.8.1
+
+Date: Wed Mar 27 12:27:22 2024
+Command line arguments: --prism bert-base-uncased_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence>0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.029s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11
+Transitions: 	16
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence > 0) -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence > 0)] ...
+Result (for initial states): 0
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Wed Mar 27 12:27:22 2024
+Command line arguments: --prism bert-base-uncased_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence=0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.029s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence = 0)] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Wed Mar 27 12:27:22 2024
+Command line arguments: --prism bert-base-uncased_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F (gender_sentence<0 & gender_sentence!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.030s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11
+Transitions: 	16
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((gender_sentence < 0) & (gender_sentence != -(14124))) -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((gender_sentence < 0) & (gender_sentence != -(14124)))] ...
+Result (for initial states): 0
+Time for model checking: 0.000s.
+GEMMA-2B
+Storm 1.8.1
+
+Date: Wed Mar 27 12:27:22 2024
+Command line arguments: --prism google_gemma-2b-it_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence>0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 5.061s.
+
+Time for model construction: 50.831s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	16913
+Transitions: 	31575
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence > 0) -> 100 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence > 0)] ...
+Result (for initial states): 0.002248815702
+Time for model checking: 0.003s.
+Storm 1.8.1
+
+Date: Wed Mar 27 12:28:20 2024
+Command line arguments: --prism google_gemma-2b-it_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence=0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 5.067s.
+
+Time for model construction: 1.436s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence = 0)] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Wed Mar 27 12:28:29 2024
+Command line arguments: --prism google_gemma-2b-it_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F (gender_sentence<0 & gender_sentence!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 5.089s.
+
+Time for model construction: 50.531s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	17332
+Transitions: 	32376
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((gender_sentence < 0) & (gender_sentence != -(14124))) -> 5 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((gender_sentence < 0) & (gender_sentence != -(14124)))] ...
+Result (for initial states): 0.0001389650364
+Time for model checking: 0.002s.
+GEMMA-7B
+Storm 1.8.1
+
+Date: Wed Mar 27 12:29:26 2024
+Command line arguments: --prism google_gemma-7b-it_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence>0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.018s.
+
+Time for model construction: 0.035s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	94
+Transitions: 	156
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence > 0) -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence > 0)] ...
+Result (for initial states): 0
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Wed Mar 27 12:29:26 2024
+Command line arguments: --prism google_gemma-7b-it_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence=0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.018s.
+
+Time for model construction: 0.030s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence = 0)] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Wed Mar 27 12:29:26 2024
+Command line arguments: --prism google_gemma-7b-it_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F (gender_sentence<0 & gender_sentence!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.019s.
+
+Time for model construction: 0.035s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	94
+Transitions: 	156
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((gender_sentence < 0) & (gender_sentence != -(14124))) -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((gender_sentence < 0) & (gender_sentence != -(14124)))] ...
+Result (for initial states): 0
+Time for model checking: 0.000s.
+LLAMA-7B
+Storm 1.8.1
+
+Date: Wed Mar 27 12:29:27 2024
+Command line arguments: --prism meta-llama_Llama-2-7b-hf_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence>0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 57.543s.
+
+Time for model construction: 13982.353s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	188108
+Transitions: 	360283
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence > 0) -> 1841 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence > 0)] ...
+Result (for initial states): 0.0002916803925
+Time for model checking: 0.024s.
+Storm 1.8.1
+
+Date: Wed Mar 27 16:23:49 2024
+Command line arguments: --prism meta-llama_Llama-2-7b-hf_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence=0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 57.366s.
+
+Time for model construction: 16.200s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence = 0)] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Wed Mar 27 16:25:26 2024
+Command line arguments: --prism meta-llama_Llama-2-7b-hf_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F (gender_sentence<0 & gender_sentence!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 57.717s.
+
+Time for model construction: 13759.895s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	189482
+Transitions: 	362944
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((gender_sentence < 0) & (gender_sentence != -(14124))) -> 51 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((gender_sentence < 0) & (gender_sentence != -(14124)))] ...
+Result (for initial states): 1.702055517e-06
+Time for model checking: 0.026s.
+MISTRAL-7B
+Storm 1.8.1
+
+Date: Wed Mar 27 20:16:07 2024
+Command line arguments: --prism mistralai_Mistral-7B-v0.1_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence>0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 84.035s.
+
+Time for model construction: 24943.433s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	255085
+Transitions: 	490635
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence > 0) -> 4181 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence > 0)] ...
+Result (for initial states): 0.03653027425
+Time for model checking: 0.034s.
+Storm 1.8.1
+
+Date: Thu Mar 28 03:13:47 2024
+Command line arguments: --prism mistralai_Mistral-7B-v0.1_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence=0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 78.325s.
+
+Time for model construction: 21.153s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence = 0)] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+Storm 1.8.1
+
+Date: Thu Mar 28 03:15:56 2024
+Command line arguments: --prism mistralai_Mistral-7B-v0.1_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F (gender_sentence<0 & gender_sentence!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 87.364s.
+
+Time for model construction: 25661.099s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	260351
+Transitions: 	500790
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((gender_sentence < 0) & (gender_sentence != -(14124))) -> 126 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((gender_sentence < 0) & (gender_sentence != -(14124)))] ...
+Result (for initial states): 0.003009987269
+Time for model checking: 0.034s.
+GENSTRUCT-7B
+Storm 1.8.1
+
+Date: Thu Mar 28 10:25:36 2024
+Command line arguments: --prism NousResearch_Genstruct-7B_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F gender_sentence>0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 10.324s.
+
+Time for model construction: 248.710s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	28528
+Transitions: 	53294
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence > 0) -> 130 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (gender_sentence > 0)] ...
+Result (for initial states): 0.02242228523
+Time for model checking: 0.003s.
+Storm 1.8.1
+
+Date: Thu Mar 28 10:29:58 2024
+Command line arguments: --prism NousResearch_Genstruct-7B_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [G gender_sentence=0]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 8.863s.
+
+Time for model construction: 281.945s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	30760
+Transitions: 	57540
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (gender_sentence = 0) -> 26499 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G (gender_sentence = 0)] ...
+Result (for initial states): 0.4736802929
+Time for model checking: 0.026s.
+Storm 1.8.1
+
+Date: Thu Mar 28 10:34:52 2024
+Command line arguments: --prism NousResearch_Genstruct-7B_0.8_15_5_cuda_The_player_won_because_.prism --prop 'P=? [F (gender_sentence<0 & gender_sentence!=-14124)]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 8.965s.
+
+Time for model construction: 277.455s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	30141
+Transitions: 	56353
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((gender_sentence < 0) & (gender_sentence != -(14124))) -> 22 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((gender_sentence < 0) & (gender_sentence != -(14124)))] ...
+Result (for initial states): 0.001140619824
+Time for model checking: 0.004s.

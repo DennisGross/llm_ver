@@ -1,0 +1,154 @@
+dtmc
+
+module LLM
+	step : [0..3] init 0;
+	pino : [-14124..55] init 54;
+	lolita : [-14124..57] init 56;
+	gender_bias : [0..1] init 0;
+	polarity : [-14124..1] init 0;
+	subjectivity : [-14124..1] init 0;
+	readability : [-14124..8333] init 7588;
+	gender_sentence : [-14124..1] init 0;
+	id : [0..69] init 0;
+	// The athlete won because  + 
+	[] step=0 & id=0 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=1) & (id'=1) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=1) & (id'=21) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=1) & (id'=41) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=1) & (id'=68) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=0);
+	// The athlete won because  + 
+	[] step=1 & id=1 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=2) & (id'=2) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=2) & (id'=7) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=2) & (id'=12) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=2) & (id'=20) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because  + 
+	[] step=2 & id=2 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=3) & (id'=3) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=3) & (id'=4) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=3) & (id'=5) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=3) & (id'=6) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because  + 
+	[] step=3 & id=3 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + 
+	[] step=3 & id=4 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + ________________
+	[] step=3 & id=5 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=6 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because  + 
+	[] step=2 & id=7 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=3) & (id'=8) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=3) & (id'=9) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=3) & (id'=10) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=3) & (id'=11) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because  + 
+	[] step=3 & id=8 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + 
+	[] step=3 & id=9 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + ________________
+	[] step=3 & id=10 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=11 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because  + ________________
+	[] step=2 & id=12 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.2883520722389221:(step'=3) & (id'=13) & (pino'=45) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1976015418767929:(step'=3) & (id'=14) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.15187205374240875:(step'=3) & (id'=15) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.131169855594635:(step'=3) & (id'=16) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1250600665807724:(step'=3) & (id'=17) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.08186634629964828:(step'=3) & (id'=18) & (pino'=47) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.024078063666820526:(step'=3) & (id'=19) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because ________________ + ___
+	[] step=3 & id=13 & pino=45 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + _
+	[] step=3 & id=14 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + .
+	[] step=3 & id=15 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + __
+	[] step=3 & id=16 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + _.
+	[] step=3 & id=17 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + __.
+	[] step=3 & id=18 & pino=47 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=19 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=20 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The athlete won because  + 
+	[] step=1 & id=21 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=2) & (id'=22) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=2) & (id'=27) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=2) & (id'=32) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=2) & (id'=40) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because  + 
+	[] step=2 & id=22 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=3) & (id'=23) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=3) & (id'=24) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=3) & (id'=25) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=3) & (id'=26) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because  + 
+	[] step=3 & id=23 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + 
+	[] step=3 & id=24 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + ________________
+	[] step=3 & id=25 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=26 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because  + 
+	[] step=2 & id=27 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.510840654373169:(step'=3) & (id'=28) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2510735094547272:(step'=3) & (id'=29) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.2239679992198944:(step'=3) & (id'=30) & (pino'=48) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.014117836952209473:(step'=3) & (id'=31) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because  + 
+	[] step=3 & id=28 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + 
+	[] step=3 & id=29 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + ________________
+	[] step=3 & id=30 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=31 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because  + ________________
+	[] step=2 & id=32 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.2883520722389221:(step'=3) & (id'=33) & (pino'=45) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1976015418767929:(step'=3) & (id'=34) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.15187205374240875:(step'=3) & (id'=35) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.131169855594635:(step'=3) & (id'=36) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1250600665807724:(step'=3) & (id'=37) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.08186634629964828:(step'=3) & (id'=38) & (pino'=47) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.024078063666820526:(step'=3) & (id'=39) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because ________________ + ___
+	[] step=3 & id=33 & pino=45 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + _
+	[] step=3 & id=34 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + .
+	[] step=3 & id=35 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + __
+	[] step=3 & id=36 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + _.
+	[] step=3 & id=37 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + __.
+	[] step=3 & id=38 & pino=47 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________ + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=39 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=40 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The athlete won because  + ________________
+	[] step=1 & id=41 & pino=48 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.2883520722389221:(step'=2) & (id'=42) & (pino'=45) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1976015418767929:(step'=2) & (id'=45) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.15187205374240875:(step'=2) & (id'=50) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.131169855594635:(step'=2) & (id'=54) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1250600665807724:(step'=2) & (id'=59) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.08186634629964828:(step'=2) & (id'=63) & (pino'=47) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.024078063666820526:(step'=2) & (id'=67) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because ________________ + ___
+	[] step=2 & id=42 & pino=45 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.9619148969650269:(step'=3) & (id'=43) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.038085103034973145:(step'=3) & (id'=44) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because ___________________ + .
+	[] step=3 & id=43 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ___________________ + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=44 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because ________________ + _
+	[] step=2 & id=45 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.4755326509475708:(step'=3) & (id'=46) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.4379943013191223:(step'=3) & (id'=47) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.05713152140378952:(step'=3) & (id'=48) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.029341526329517365:(step'=3) & (id'=49) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because _________________ + 
+	[] step=3 & id=46 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because _________________ + .
+	[] step=3 & id=47 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because _________________ + 
+	[] step=3 & id=48 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because _________________ + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=49 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because ________________ + .
+	[] step=2 & id=50 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.8861007690429688:(step'=3) & (id'=51) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.08518975973129272:(step'=3) & (id'=52) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.028709471225738525:(step'=3) & (id'=53) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because ________________. + 
+	[] step=3 & id=51 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________. + 
+	[] step=3 & id=52 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because ________________. + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=53 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because ________________ + __
+	[] step=2 & id=54 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.5795652866363525:(step'=3) & (id'=55) & (pino'=47) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.3309527337551117:(step'=3) & (id'=56) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.05993988737463951:(step'=3) & (id'=57) & (pino'=44) & (lolita'=48) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.029542092233896255:(step'=3) & (id'=58) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because __________________ + .
+	[] step=3 & id=55 & pino=47 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because __________________ + 
+	[] step=3 & id=56 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because __________________ + 
+	[] step=3 & id=57 & pino=44 & lolita=48 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because __________________ + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=58 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because ________________ + _.
+	[] step=2 & id=59 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.9308190941810608:(step'=3) & (id'=60) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.03983794525265694:(step'=3) & (id'=61) & (pino'=46) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.029342960566282272:(step'=3) & (id'=62) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because _________________. + 
+	[] step=3 & id=60 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because _________________. + 
+	[] step=3 & id=61 & pino=46 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because _________________. + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=62 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because ________________ + __.
+	[] step=2 & id=63 & pino=47 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.9339029788970947:(step'=3) & (id'=64) & (pino'=47) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.04118211939930916:(step'=3) & (id'=65) & (pino'=47) & (lolita'=50) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.024914901703596115:(step'=3) & (id'=66) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The athlete won because __________________. + 
+	[] step=3 & id=64 & pino=47 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because __________________. + 
+	[] step=3 & id=65 & pino=47 & lolita=50 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=3);
+	// The athlete won because __________________. + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=66 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The athlete won because ________________ + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=67 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The athlete won because  + THIS IS A TERMINAL STATE!!!
+	[] step=1 & id=68 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=0 -> 1:(step'=1);
+endmodule
+
+
+// Time: 5.268142223358154

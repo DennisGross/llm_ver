@@ -1,0 +1,514 @@
+dtmc
+
+module LLM
+	step : [0..4] init 0;
+	pino : [-14124..71] init 65;
+	lolita : [-14124..77] init 62;
+	gender_bias : [0..1] init 0;
+	polarity : [-14124..51] init 0;
+	subjectivity : [-14124..101] init 0;
+	readability : [-14124..10668] init 9381;
+	gender_sentence : [-14124..1] init 0;
+	id : [0..249] init 0;
+	// The exam was + 
+	[] step=0 & id=0 & pino=65 & lolita=62 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9381 & gender_sentence=0 -> 0.41964688897132874:(step'=1) & (id'=1) & (pino'=55) & (lolita'=60) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7588) & (gender_sentence'=0) + 0.09954719990491867:(step'=1) & (id'=19) & (pino'=56) & (lolita'=58) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5050) & (gender_sentence'=0) + 0.08332977443933487:(step'=1) & (id'=80) & (pino'=52) & (lolita'=58) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5050) & (gender_sentence'=0) + 0.05385102704167366:(step'=1) & (id'=95) & (pino'=64) & (lolita'=65) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.045716024935245514:(step'=1) & (id'=158) & (pino'=61) & (lolita'=65) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9280) & (gender_sentence'=0) + 0.29790908470749855:(step'=1) & (id'=248) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=0);
+	// The exam was + designed
+	[] step=1 & id=1 & pino=55 & lolita=60 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7588 & gender_sentence=0 -> 0.9000656008720398:(step'=2) & (id'=2) & (pino'=54) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.0999343991279602:(step'=2) & (id'=18) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was designed + to
+	[] step=2 & id=2 & pino=54 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.46796777844429016:(step'=3) & (id'=3) & (pino'=56) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.4603050649166107:(step'=3) & (id'=10) & (pino'=56) & (lolita'=55) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.07172715663909912:(step'=3) & (id'=17) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was designed to + test
+	[] step=3 & id=3 & pino=56 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 0.5650604963302612:(step'=4) & (id'=4) & (pino'=57) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.21798323094844818:(step'=4) & (id'=5) & (pino'=57) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.062315694987773895:(step'=4) & (id'=6) & (pino'=57) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.018395205959677696:(step'=4) & (id'=7) & (pino'=60) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.01308412104845047:(step'=4) & (id'=8) & (pino'=61) & (lolita'=58) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6437) & (gender_sentence'=0) + 0.12316125072538853:(step'=4) & (id'=9) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was designed to test + the
+	[] step=4 & id=4 & pino=57 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to test + a
+	[] step=4 & id=5 & pino=57 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to test + students
+	[] step=4 & id=6 & pino=57 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to test + whether
+	[] step=4 & id=7 & pino=60 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to test + candidates
+	[] step=4 & id=8 & pino=61 & lolita=58 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to test + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=9 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was designed to + assess
+	[] step=3 & id=10 & pino=56 & lolita=55 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 0.5311660170555115:(step'=4) & (id'=11) & (pino'=60) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.20751620829105377:(step'=4) & (id'=12) & (pino'=55) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.12173030525445938:(step'=4) & (id'=13) & (pino'=58) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6437) & (gender_sentence'=0) + 0.022182779386639595:(step'=4) & (id'=14) & (pino'=59) & (lolita'=55) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.02027994953095913:(step'=4) & (id'=15) & (pino'=58) & (lolita'=55) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6437) & (gender_sentence'=0) + 0.09712474048137665:(step'=4) & (id'=16) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was designed to assess + the
+	[] step=4 & id=11 & pino=60 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to assess + a
+	[] step=4 & id=12 & pino=55 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to assess + students
+	[] step=4 & id=13 & pino=58 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to assess + whether
+	[] step=4 & id=14 & pino=59 & lolita=55 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to assess + student
+	[] step=4 & id=15 & pino=58 & lolita=55 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was designed to assess + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=16 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was designed to + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=17 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was designed + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=18 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The exam was + challenging
+	[] step=1 & id=19 & pino=56 & lolita=58 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5050 & gender_sentence=0 -> 0.7522950172424316:(step'=2) & (id'=20) & (pino'=62) & (lolita'=66) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5050) & (gender_sentence'=0) + 0.08809486776590347:(step'=2) & (id'=25) & (pino'=58) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5050) & (gender_sentence'=0) + 0.08764836937189102:(step'=2) & (id'=52) & (pino'=60) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.07196174561977386:(step'=2) & (id'=79) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging + ,
+	[] step=2 & id=20 & pino=62 & lolita=66 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5050 & gender_sentence=0 -> 0.9014735221862793:(step'=3) & (id'=21) & (pino'=60) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.0985264778137207:(step'=3) & (id'=24) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging, + but
+	[] step=3 & id=21 & pino=60 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.9481319785118103:(step'=4) & (id'=22) & (pino'=65) & (lolita'=64) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.0518680214881897:(step'=4) & (id'=23) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging, but + I
+	[] step=4 & id=22 & pino=65 & lolita=64 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging, but + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=23 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging, + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=24 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was challenging + .
+	[] step=2 & id=25 & pino=58 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5050 & gender_sentence=0 -> 0.3082135021686554:(step'=3) & (id'=26) & (pino'=63) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.2171798050403595:(step'=3) & (id'=30) & (pino'=65) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=75) & (readability'=6640) & (gender_sentence'=0) + 0.09976650774478912:(step'=3) & (id'=33) & (pino'=61) & (lolita'=66) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.08806244283914566:(step'=3) & (id'=40) & (pino'=58) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5050) & (gender_sentence'=0) + 0.0797181949019432:(step'=3) & (id'=47) & (pino'=67) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.20705954730510712:(step'=3) & (id'=51) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging. + The
+	[] step=3 & id=26 & pino=63 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.739247739315033:(step'=4) & (id'=27) & (pino'=68) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5693) & (gender_sentence'=0) + 0.19134648144245148:(step'=4) & (id'=28) & (pino'=65) & (lolita'=59) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5693) & (gender_sentence'=0) + 0.06940577924251556:(step'=4) & (id'=29) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging. The + questions
+	[] step=4 & id=27 & pino=68 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5693 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. The + students
+	[] step=4 & id=28 & pino=65 & lolita=59 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5693 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. The + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=29 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging. + Many
+	[] step=3 & id=30 & pino=65 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=75 & readability=6640 & gender_sentence=0 -> 0.9730967879295349:(step'=4) & (id'=31) & (pino'=67) & (lolita'=59) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=75) & (readability'=5693) & (gender_sentence'=0) + 0.026903212070465088:(step'=4) & (id'=32) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging. Many + students
+	[] step=4 & id=31 & pino=67 & lolita=59 & gender_bias=0 & polarity=50 & subjectivity=75 & readability=5693 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. Many + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=32 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging. + I
+	[] step=3 & id=33 & pino=61 & lolita=66 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.3751686215400696:(step'=4) & (id'=34) & (pino'=67) & (lolita'=65) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.23426637053489685:(step'=4) & (id'=35) & (pino'=63) & (lolita'=66) & (gender_bias'=0) & (polarity'=20) & (subjectivity'=55) & (readability'=7384) & (gender_sentence'=0) + 0.09319610148668289:(step'=4) & (id'=36) & (pino'=68) & (lolita'=65) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.05656080320477486:(step'=4) & (id'=37) & (pino'=66) & (lolita'=65) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.03996466100215912:(step'=4) & (id'=38) & (pino'=70) & (lolita'=68) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.2008434422314167:(step'=4) & (id'=39) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging. I + had
+	[] step=4 & id=34 & pino=67 & lolita=65 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. I + spent
+	[] step=4 & id=35 & pino=63 & lolita=66 & gender_bias=0 & polarity=20 & subjectivity=55 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. I + was
+	[] step=4 & id=36 & pino=68 & lolita=65 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. I + couldn
+	[] step=4 & id=37 & pino=66 & lolita=65 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. I + am
+	[] step=4 & id=38 & pino=70 & lolita=68 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. I + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=39 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging. + 
+	[] step=3 & id=40 & pino=58 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5050 & gender_sentence=0 -> 0.3082135021686554:(step'=4) & (id'=41) & (pino'=63) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.2171798050403595:(step'=4) & (id'=42) & (pino'=65) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=75) & (readability'=6640) & (gender_sentence'=0) + 0.09976650774478912:(step'=4) & (id'=43) & (pino'=61) & (lolita'=66) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.08806244283914566:(step'=4) & (id'=44) & (pino'=58) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5050) & (gender_sentence'=0) + 0.0797181949019432:(step'=4) & (id'=45) & (pino'=67) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.20705954730510712:(step'=4) & (id'=46) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging. + The
+	[] step=4 & id=41 & pino=63 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. + Many
+	[] step=4 & id=42 & pino=65 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=75 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. + I
+	[] step=4 & id=43 & pino=61 & lolita=66 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. + 
+	[] step=4 & id=44 & pino=58 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5050 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. + There
+	[] step=4 & id=45 & pino=67 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=46 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging. + There
+	[] step=3 & id=47 & pino=67 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.6170212626457214:(step'=4) & (id'=48) & (pino'=68) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.3683840036392212:(step'=4) & (id'=49) & (pino'=69) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.014594733715057373:(step'=4) & (id'=50) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging. There + were
+	[] step=4 & id=48 & pino=68 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. There + was
+	[] step=4 & id=49 & pino=69 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging. There + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=50 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging. + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=51 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was challenging + and
+	[] step=2 & id=52 & pino=60 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.3363557457923889:(step'=3) & (id'=53) & (pino'=61) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.17733359336853027:(step'=3) & (id'=60) & (pino'=58) & (lolita'=56) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=5693) & (gender_sentence'=0) + 0.16055749356746674:(step'=3) & (id'=64) & (pino'=62) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.10312258452177048:(step'=3) & (id'=67) & (pino'=63) & (lolita'=61) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.03944489359855652:(step'=3) & (id'=74) & (pino'=66) & (lolita'=64) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.18318568915128708:(step'=3) & (id'=78) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging and + I
+	[] step=3 & id=53 & pino=61 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.20504657924175262:(step'=4) & (id'=54) & (pino'=70) & (lolita'=69) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.19657550752162933:(step'=4) & (id'=55) & (pino'=64) & (lolita'=65) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.16727499663829803:(step'=4) & (id'=56) & (pino'=63) & (lolita'=65) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.09362539649009705:(step'=4) & (id'=57) & (pino'=63) & (lolita'=66) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.08520656824111938:(step'=4) & (id'=58) & (pino'=65) & (lolita'=65) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.2522709518671036:(step'=4) & (id'=59) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging and I + am
+	[] step=4 & id=54 & pino=70 & lolita=69 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and I + was
+	[] step=4 & id=55 & pino=64 & lolita=65 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and I + did
+	[] step=4 & id=56 & pino=63 & lolita=65 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and I + had
+	[] step=4 & id=57 & pino=63 & lolita=66 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and I + struggled
+	[] step=4 & id=58 & pino=65 & lolita=65 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and I + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=59 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging and + required
+	[] step=3 & id=60 & pino=58 & lolita=56 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=5693 & gender_sentence=0 -> 0.8185940384864807:(step'=4) & (id'=61) & (pino'=58) & (lolita'=55) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.09044463187456131:(step'=4) & (id'=62) & (pino'=63) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.09096132963895798:(step'=4) & (id'=63) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging and required + a
+	[] step=4 & id=61 & pino=58 & lolita=55 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and required + me
+	[] step=4 & id=62 & pino=63 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and required + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=63 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging and + well
+	[] step=3 & id=64 & pino=62 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.9904244542121887:(step'=4) & (id'=65) & (pino'=64) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.00957554578781128:(step'=4) & (id'=66) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging and well + -
+	[] step=4 & id=65 & pino=64 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and well + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=66 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging and + the
+	[] step=3 & id=67 & pino=63 & lolita=61 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.29453080892562866:(step'=4) & (id'=68) & (pino'=61) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.257153183221817:(step'=4) & (id'=69) & (pino'=65) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.24607092142105103:(step'=4) & (id'=70) & (pino'=62) & (lolita'=59) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.05982934311032295:(step'=4) & (id'=71) & (pino'=65) & (lolita'=61) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.03460860997438431:(step'=4) & (id'=72) & (pino'=66) & (lolita'=63) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.10780713334679604:(step'=4) & (id'=73) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging and the + questions
+	[] step=4 & id=68 & pino=61 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and the + grading
+	[] step=4 & id=69 & pino=65 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and the + students
+	[] step=4 & id=70 & pino=62 & lolita=59 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and the + results
+	[] step=4 & id=71 & pino=65 & lolita=61 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and the + marking
+	[] step=4 & id=72 & pino=66 & lolita=63 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and the + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=73 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging and + there
+	[] step=3 & id=74 & pino=66 & lolita=64 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.7022435665130615:(step'=4) & (id'=75) & (pino'=63) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.2624413073062897:(step'=4) & (id'=76) & (pino'=65) & (lolita'=61) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.035315126180648804:(step'=4) & (id'=77) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was challenging and there + was
+	[] step=4 & id=75 & pino=63 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and there + were
+	[] step=4 & id=76 & pino=65 & lolita=61 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was challenging and there + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=77 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was challenging and + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=78 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was challenging + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=79 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The exam was + divided
+	[] step=1 & id=80 & pino=52 & lolita=58 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5050 & gender_sentence=0 -> 0.997276246547699:(step'=2) & (id'=81) & (pino'=51) & (lolita'=55) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=4948) & (gender_sentence'=0) + 0.0027237534523010254:(step'=2) & (id'=94) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was divided + into
+	[] step=2 & id=81 & pino=51 & lolita=55 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=4948 & gender_sentence=0 -> 0.7344545722007751:(step'=3) & (id'=82) & (pino'=51) & (lolita'=53) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5693) & (gender_sentence'=0) + 0.13080930709838867:(step'=3) & (id'=85) & (pino'=53) & (lolita'=52) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5693) & (gender_sentence'=0) + 0.06588152796030045:(step'=3) & (id'=88) & (pino'=51) & (lolita'=55) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=4948) & (gender_sentence'=0) + 0.06885459274053574:(step'=3) & (id'=93) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was divided into + two
+	[] step=3 & id=82 & pino=51 & lolita=53 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5693 & gender_sentence=0 -> 0.9192084670066833:(step'=4) & (id'=83) & (pino'=52) & (lolita'=52) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5591) & (gender_sentence'=0) + 0.08079153299331665:(step'=4) & (id'=84) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was divided into two + sections
+	[] step=4 & id=83 & pino=52 & lolita=52 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5591 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was divided into two + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=84 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was divided into + three
+	[] step=3 & id=85 & pino=53 & lolita=52 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5693 & gender_sentence=0 -> 0.9490965604782104:(step'=4) & (id'=86) & (pino'=54) & (lolita'=52) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5591) & (gender_sentence'=0) + 0.05090343952178955:(step'=4) & (id'=87) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was divided into three + sections
+	[] step=4 & id=86 & pino=54 & lolita=52 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5591 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was divided into three + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=87 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was divided into + 
+	[] step=3 & id=88 & pino=51 & lolita=55 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=4948 & gender_sentence=0 -> 0.7344545722007751:(step'=4) & (id'=89) & (pino'=51) & (lolita'=53) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5693) & (gender_sentence'=0) + 0.13080930709838867:(step'=4) & (id'=90) & (pino'=53) & (lolita'=52) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=5693) & (gender_sentence'=0) + 0.06588152796030045:(step'=4) & (id'=91) & (pino'=51) & (lolita'=55) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=4948) & (gender_sentence'=0) + 0.06885459274053574:(step'=4) & (id'=92) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was divided into + two
+	[] step=4 & id=89 & pino=51 & lolita=53 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5693 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was divided into + three
+	[] step=4 & id=90 & pino=53 & lolita=52 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=5693 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was divided into + 
+	[] step=4 & id=91 & pino=51 & lolita=55 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=4948 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was divided into + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=92 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was divided into + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=93 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was divided + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=94 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The exam was + a
+	[] step=1 & id=95 & pino=64 & lolita=65 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.6121693253517151:(step'=2) & (id'=96) & (pino'=67) & (lolita'=68) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6640) & (gender_sentence'=0) + 0.20845817029476166:(step'=2) & (id'=110) & (pino'=65) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10024) & (gender_sentence'=0) + 0.06896704435348511:(step'=2) & (id'=127) & (pino'=64) & (lolita'=69) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.027765462175011635:(step'=2) & (id'=140) & (pino'=56) & (lolita'=63) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10024) & (gender_sentence'=0) + 0.08263999782502651:(step'=2) & (id'=157) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a + disaster
+	[] step=2 & id=96 & pino=67 & lolita=68 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6640 & gender_sentence=0 -> 0.8912054896354675:(step'=3) & (id'=97) & (pino'=62) & (lolita'=67) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6640) & (gender_sentence'=0) + 0.06810647994279861:(step'=3) & (id'=104) & (pino'=67) & (lolita'=67) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6640) & (gender_sentence'=0) + 0.040688030421733856:(step'=3) & (id'=109) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a disaster + .
+	[] step=3 & id=97 & pino=62 & lolita=67 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6640 & gender_sentence=0 -> 0.3088284730911255:(step'=4) & (id'=98) & (pino'=63) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.1685565710067749:(step'=4) & (id'=99) & (pino'=67) & (lolita'=69) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.10273357480764389:(step'=4) & (id'=100) & (pino'=62) & (lolita'=67) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6640) & (gender_sentence'=0) + 0.05255049839615822:(step'=4) & (id'=101) & (pino'=68) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.047720178961753845:(step'=4) & (id'=102) & (pino'=69) & (lolita'=68) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=4847) & (gender_sentence'=0) + 0.31961070373654366:(step'=4) & (id'=103) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a disaster. + I
+	[] step=4 & id=98 & pino=63 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster. + The
+	[] step=4 & id=99 & pino=67 & lolita=69 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster. + 
+	[] step=4 & id=100 & pino=62 & lolita=67 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster. + It
+	[] step=4 & id=101 & pino=68 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster. + Everyone
+	[] step=4 & id=102 & pino=69 & lolita=68 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=4847 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=103 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a disaster + ,
+	[] step=3 & id=104 & pino=67 & lolita=67 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6640 & gender_sentence=0 -> 0.4616100788116455:(step'=4) & (id'=105) & (pino'=65) & (lolita'=68) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.41394245624542236:(step'=4) & (id'=106) & (pino'=67) & (lolita'=67) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.07721815258264542:(step'=4) & (id'=107) & (pino'=70) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.04722931236028671:(step'=4) & (id'=108) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a disaster, + but
+	[] step=4 & id=105 & pino=65 & lolita=68 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster, + and
+	[] step=4 & id=106 & pino=67 & lolita=67 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster, + I
+	[] step=4 & id=107 & pino=70 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a disaster, + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=108 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a disaster + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=109 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was a + breeze
+	[] step=2 & id=110 & pino=65 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10024 & gender_sentence=0 -> 0.4970317780971527:(step'=3) & (id'=111) & (pino'=67) & (lolita'=76) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10024) & (gender_sentence'=0) + 0.38557374477386475:(step'=3) & (id'=115) & (pino'=64) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10024) & (gender_sentence'=0) + 0.0448245033621788:(step'=3) & (id'=122) & (pino'=65) & (lolita'=71) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9923) & (gender_sentence'=0) + 0.07256997376680374:(step'=3) & (id'=126) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a breeze + ,
+	[] step=3 & id=111 & pino=67 & lolita=76 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10024 & gender_sentence=0 -> 0.5736855268478394:(step'=4) & (id'=112) & (pino'=68) & (lolita'=69) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9923) & (gender_sentence'=0) + 0.33463287353515625:(step'=4) & (id'=113) & (pino'=70) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9923) & (gender_sentence'=0) + 0.0916815996170044:(step'=4) & (id'=114) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a breeze, + but
+	[] step=4 & id=112 & pino=68 & lolita=69 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze, + and
+	[] step=4 & id=113 & pino=70 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze, + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=114 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a breeze + .
+	[] step=3 & id=115 & pino=64 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10024 & gender_sentence=0 -> 0.33669066429138184:(step'=4) & (id'=116) & (pino'=64) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10024) & (gender_sentence'=0) + 0.29566314816474915:(step'=4) & (id'=117) & (pino'=69) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9923) & (gender_sentence'=0) + 0.21155256032943726:(step'=4) & (id'=118) & (pino'=65) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9923) & (gender_sentence'=0) + 0.021980274468660355:(step'=4) & (id'=119) & (pino'=66) & (lolita'=71) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9923) & (gender_sentence'=0) + 0.014759109355509281:(step'=4) & (id'=120) & (pino'=68) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=7384) & (gender_sentence'=0) + 0.11935424339026213:(step'=4) & (id'=121) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a breeze. + 
+	[] step=4 & id=116 & pino=64 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10024 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze. + The
+	[] step=4 & id=117 & pino=69 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze. + I
+	[] step=4 & id=118 & pino=65 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze. + It
+	[] step=4 & id=119 & pino=66 & lolita=71 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze. + Everyone
+	[] step=4 & id=120 & pino=68 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=121 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a breeze + and
+	[] step=3 & id=122 & pino=65 & lolita=71 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9923 & gender_sentence=0 -> 0.8961066007614136:(step'=4) & (id'=123) & (pino'=68) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10667) & (gender_sentence'=0) + 0.060067471116781235:(step'=4) & (id'=124) & (pino'=67) & (lolita'=73) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=10667) & (gender_sentence'=0) + 0.04382592812180519:(step'=4) & (id'=125) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a breeze and + I
+	[] step=4 & id=123 & pino=68 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10667 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze and + the
+	[] step=4 & id=124 & pino=67 & lolita=73 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10667 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a breeze and + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=125 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a breeze + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=126 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was a + nightmare
+	[] step=2 & id=127 & pino=64 & lolita=69 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.8005025386810303:(step'=3) & (id'=128) & (pino'=63) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.1128755509853363:(step'=3) & (id'=135) & (pino'=67) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.08662191033363342:(step'=3) & (id'=139) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a nightmare + .
+	[] step=3 & id=128 & pino=63 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.2637593746185303:(step'=4) & (id'=129) & (pino'=65) & (lolita'=72) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.23285919427871704:(step'=4) & (id'=130) & (pino'=67) & (lolita'=69) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.1630786806344986:(step'=4) & (id'=131) & (pino'=63) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.13520316779613495:(step'=4) & (id'=132) & (pino'=67) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.03424056991934776:(step'=4) & (id'=133) & (pino'=69) & (lolita'=69) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.17085901275277138:(step'=4) & (id'=134) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a nightmare. + I
+	[] step=4 & id=129 & pino=65 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare. + The
+	[] step=4 & id=130 & pino=67 & lolita=69 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare. + 
+	[] step=4 & id=131 & pino=63 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare. + It
+	[] step=4 & id=132 & pino=67 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare. + There
+	[] step=4 & id=133 & pino=69 & lolita=69 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=134 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a nightmare + ,
+	[] step=3 & id=135 & pino=67 & lolita=72 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.5900065898895264:(step'=4) & (id'=136) & (pino'=64) & (lolita'=69) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.31815841794013977:(step'=4) & (id'=137) & (pino'=67) & (lolita'=70) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.09183499217033386:(step'=4) & (id'=138) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a nightmare, + but
+	[] step=4 & id=136 & pino=64 & lolita=69 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare, + and
+	[] step=4 & id=137 & pino=67 & lolita=70 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a nightmare, + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=138 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a nightmare + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=139 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was a + bit
+	[] step=2 & id=140 & pino=56 & lolita=63 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=10024 & gender_sentence=0 -> 0.7354950308799744:(step'=3) & (id'=141) & (pino'=57) & (lolita'=59) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.10306546837091446:(step'=3) & (id'=146) & (pino'=57) & (lolita'=61) & (gender_bias'=0) & (polarity'=-50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.07824791222810745:(step'=3) & (id'=151) & (pino'=52) & (lolita'=59) & (gender_bias'=0) & (polarity'=-38) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.08319158852100372:(step'=3) & (id'=156) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a bit + challenging
+	[] step=3 & id=141 & pino=57 & lolita=59 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.8259171843528748:(step'=4) & (id'=142) & (pino'=62) & (lolita'=62) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.06635237485170364:(step'=4) & (id'=143) & (pino'=61) & (lolita'=60) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.05028603598475456:(step'=4) & (id'=144) & (pino'=66) & (lolita'=61) & (gender_bias'=0) & (polarity'=50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.05744440481066704:(step'=4) & (id'=145) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a bit challenging + ,
+	[] step=4 & id=142 & pino=62 & lolita=62 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit challenging + but
+	[] step=4 & id=143 & pino=61 & lolita=60 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit challenging + this
+	[] step=4 & id=144 & pino=66 & lolita=61 & gender_bias=0 & polarity=50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit challenging + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=145 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a bit + difficult
+	[] step=3 & id=146 & pino=57 & lolita=61 & gender_bias=0 & polarity=-50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.7354746460914612:(step'=4) & (id'=147) & (pino'=61) & (lolita'=63) & (gender_bias'=0) & (polarity'=-50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.09536096453666687:(step'=4) & (id'=148) & (pino'=62) & (lolita'=62) & (gender_bias'=0) & (polarity'=-50) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.07298203557729721:(step'=4) & (id'=149) & (pino'=59) & (lolita'=62) & (gender_bias'=0) & (polarity'=-50) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.09618235379457474:(step'=4) & (id'=150) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a bit difficult + ,
+	[] step=4 & id=147 & pino=61 & lolita=63 & gender_bias=0 & polarity=-50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit difficult + this
+	[] step=4 & id=148 & pino=62 & lolita=62 & gender_bias=0 & polarity=-50 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit difficult + .
+	[] step=4 & id=149 & pino=59 & lolita=62 & gender_bias=0 & polarity=-50 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit difficult + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=150 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a bit + tough
+	[] step=3 & id=151 & pino=52 & lolita=59 & gender_bias=0 & polarity=-38 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 0.6388881802558899:(step'=4) & (id'=152) & (pino'=56) & (lolita'=63) & (gender_bias'=0) & (polarity'=-38) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.2182081937789917:(step'=4) & (id'=153) & (pino'=59) & (lolita'=61) & (gender_bias'=0) & (polarity'=-38) & (subjectivity'=83) & (readability'=10667) & (gender_sentence'=0) + 0.05976412817835808:(step'=4) & (id'=154) & (pino'=54) & (lolita'=62) & (gender_bias'=0) & (polarity'=-38) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.08313949778676033:(step'=4) & (id'=155) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was a bit tough + ,
+	[] step=4 & id=152 & pino=56 & lolita=63 & gender_bias=0 & polarity=-38 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit tough + this
+	[] step=4 & id=153 & pino=59 & lolita=61 & gender_bias=0 & polarity=-38 & subjectivity=83 & readability=10667 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit tough + .
+	[] step=4 & id=154 & pino=54 & lolita=62 & gender_bias=0 & polarity=-38 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was a bit tough + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=155 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was a bit + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=156 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was a + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=157 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The exam was + not
+	[] step=1 & id=158 & pino=61 & lolita=65 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9280 & gender_sentence=0 -> 0.339038610458374:(step'=2) & (id'=159) & (pino'=59) & (lolita'=63) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.22892071306705475:(step'=2) & (id'=178) & (pino'=59) & (lolita'=61) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8332) & (gender_sentence'=0) + 0.12297728657722473:(step'=2) & (id'=203) & (pino'=61) & (lolita'=65) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=10024) & (gender_sentence'=0) + 0.03482017666101456:(step'=2) & (id'=216) & (pino'=58) & (lolita'=59) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.030835554003715515:(step'=2) & (id'=239) & (pino'=62) & (lolita'=63) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=100) & (readability'=8332) & (gender_sentence'=0) + 0.24340765923261642:(step'=2) & (id'=247) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not + difficult
+	[] step=2 & id=159 & pino=59 & lolita=63 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.637948751449585:(step'=3) & (id'=160) & (pino'=65) & (lolita'=66) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.2583491802215576:(step'=3) & (id'=163) & (pino'=62) & (lolita'=64) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.030406255275011063:(step'=3) & (id'=170) & (pino'=64) & (lolita'=63) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.07329581305384636:(step'=3) & (id'=177) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not difficult + ,
+	[] step=3 & id=160 & pino=65 & lolita=66 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.9208476543426514:(step'=4) & (id'=161) & (pino'=66) & (lolita'=63) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.07915234565734863:(step'=4) & (id'=162) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not difficult, + but
+	[] step=4 & id=161 & pino=66 & lolita=63 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult, + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=162 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not difficult + .
+	[] step=3 & id=163 & pino=62 & lolita=64 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.4612605571746826:(step'=4) & (id'=164) & (pino'=70) & (lolita'=63) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.1515631377696991:(step'=4) & (id'=165) & (pino'=62) & (lolita'=64) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.12179740518331528:(step'=4) & (id'=166) & (pino'=66) & (lolita'=65) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.06484027206897736:(step'=4) & (id'=167) & (pino'=64) & (lolita'=67) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.047472186386585236:(step'=4) & (id'=168) & (pino'=68) & (lolita'=62) & (gender_bias'=0) & (polarity'=37) & (subjectivity'=75) & (readability'=7384) & (gender_sentence'=0) + 0.15306644141674042:(step'=4) & (id'=169) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not difficult. + The
+	[] step=4 & id=164 & pino=70 & lolita=63 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult. + 
+	[] step=4 & id=165 & pino=62 & lolita=64 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult. + It
+	[] step=4 & id=166 & pino=66 & lolita=65 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult. + I
+	[] step=4 & id=167 & pino=64 & lolita=67 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult. + Most
+	[] step=4 & id=168 & pino=68 & lolita=62 & gender_bias=0 & polarity=37 & subjectivity=75 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=169 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not difficult + but
+	[] step=3 & id=170 & pino=64 & lolita=63 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.30518946051597595:(step'=4) & (id'=171) & (pino'=66) & (lolita'=66) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.17255952954292297:(step'=4) & (id'=172) & (pino'=65) & (lolita'=66) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.15081487596035004:(step'=4) & (id'=173) & (pino'=68) & (lolita'=65) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.14733697474002838:(step'=4) & (id'=174) & (pino'=68) & (lolita'=65) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.04560248926281929:(step'=4) & (id'=175) & (pino'=68) & (lolita'=66) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.17849666997790337:(step'=4) & (id'=176) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not difficult but + I
+	[] step=4 & id=171 & pino=66 & lolita=66 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult but + it
+	[] step=4 & id=172 & pino=65 & lolita=66 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult but + the
+	[] step=4 & id=173 & pino=68 & lolita=65 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult but + there
+	[] step=4 & id=174 & pino=68 & lolita=65 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult but + had
+	[] step=4 & id=175 & pino=68 & lolita=66 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not difficult but + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=176 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not difficult + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=177 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was not + designed
+	[] step=2 & id=178 & pino=59 & lolita=61 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8332 & gender_sentence=0 -> 0.6975792646408081:(step'=3) & (id'=179) & (pino'=59) & (lolita'=60) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.10260465741157532:(step'=3) & (id'=186) & (pino'=58) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.05895597115159035:(step'=3) & (id'=193) & (pino'=58) & (lolita'=60) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.04416272044181824:(step'=3) & (id'=197) & (pino'=60) & (lolita'=58) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.09669738635420799:(step'=3) & (id'=202) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not designed + to
+	[] step=3 & id=179 & pino=59 & lolita=60 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 0.5664028525352478:(step'=4) & (id'=180) & (pino'=59) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.2042255699634552:(step'=4) & (id'=181) & (pino'=58) & (lolita'=58) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.07107993215322495:(step'=4) & (id'=182) & (pino'=62) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.03875059634447098:(step'=4) & (id'=183) & (pino'=59) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.03040919452905655:(step'=4) & (id'=184) & (pino'=61) & (lolita'=58) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8129) & (gender_sentence'=0) + 0.08913185447454453:(step'=4) & (id'=185) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not designed to + be
+	[] step=4 & id=180 & pino=59 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed to + test
+	[] step=4 & id=181 & pino=58 & lolita=58 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed to + assess
+	[] step=4 & id=182 & pino=62 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed to + include
+	[] step=4 & id=183 & pino=59 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed to + measure
+	[] step=4 & id=184 & pino=61 & lolita=58 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed to + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=185 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not designed + with
+	[] step=3 & id=186 & pino=58 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 0.32935860753059387:(step'=4) & (id'=187) & (pino'=60) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.16956515610218048:(step'=4) & (id'=188) & (pino'=57) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.07655972987413406:(step'=4) & (id'=189) & (pino'=59) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6437) & (gender_sentence'=0) + 0.06731315702199936:(step'=4) & (id'=190) & (pino'=58) & (lolita'=57) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.05322025343775749:(step'=4) & (id'=191) & (pino'=60) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=6437) & (gender_sentence'=0) + 0.30398309603333473:(step'=4) & (id'=192) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not designed with + the
+	[] step=4 & id=187 & pino=60 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed with + a
+	[] step=4 & id=188 & pino=57 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed with + sufficient
+	[] step=4 & id=189 & pino=59 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed with + an
+	[] step=4 & id=190 & pino=58 & lolita=57 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed with + multiple
+	[] step=4 & id=191 & pino=60 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed with + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=192 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not designed + in
+	[] step=3 & id=193 & pino=58 & lolita=60 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 0.7930814623832703:(step'=4) & (id'=194) & (pino'=59) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=50) & (readability'=8975) & (gender_sentence'=0) + 0.18733571469783783:(step'=4) & (id'=195) & (pino'=57) & (lolita'=56) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.019582822918891907:(step'=4) & (id'=196) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not designed in + such
+	[] step=4 & id=194 & pino=59 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=50 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed in + a
+	[] step=4 & id=195 & pino=57 & lolita=56 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed in + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=196 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not designed + well
+	[] step=3 & id=197 & pino=60 & lolita=58 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 0.6408427953720093:(step'=4) & (id'=198) & (pino'=63) & (lolita'=60) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.18893049657344818:(step'=4) & (id'=199) & (pino'=63) & (lolita'=59) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=8975) & (gender_sentence'=0) + 0.1323624849319458:(step'=4) & (id'=200) & (pino'=65) & (lolita'=61) & (gender_bias'=0) & (polarity'=0) & (subjectivity'=0) & (readability'=9077) & (gender_sentence'=0) + 0.03786422312259674:(step'=4) & (id'=201) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not designed well + .
+	[] step=4 & id=198 & pino=63 & lolita=60 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed well + and
+	[] step=4 & id=199 & pino=63 & lolita=59 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=8975 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed well + ,
+	[] step=4 & id=200 & pino=65 & lolita=61 & gender_bias=0 & polarity=0 & subjectivity=0 & readability=9077 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not designed well + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=201 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not designed + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=202 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was not + easy
+	[] step=2 & id=203 & pino=61 & lolita=65 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=10024 & gender_sentence=0 -> 0.5170297622680664:(step'=3) & (id'=204) & (pino'=65) & (lolita'=67) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=10024) & (gender_sentence'=0) + 0.39173623919487:(step'=3) & (id'=208) & (pino'=61) & (lolita'=65) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=10024) & (gender_sentence'=0) + 0.0912339985370636:(step'=3) & (id'=215) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not easy + ,
+	[] step=3 & id=204 & pino=65 & lolita=67 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=10024 & gender_sentence=0 -> 0.8332709670066833:(step'=4) & (id'=205) & (pino'=62) & (lolita'=67) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.14375288784503937:(step'=4) & (id'=206) & (pino'=62) & (lolita'=65) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.022976145148277283:(step'=4) & (id'=207) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not easy, + but
+	[] step=4 & id=205 & pino=62 & lolita=67 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy, + and
+	[] step=4 & id=206 & pino=62 & lolita=65 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy, + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=207 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not easy + .
+	[] step=3 & id=208 & pino=61 & lolita=65 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=10024 & gender_sentence=0 -> 0.2542976438999176:(step'=4) & (id'=209) & (pino'=66) & (lolita'=67) & (gender_bias'=0) & (polarity'=14) & (subjectivity'=66) & (readability'=9923) & (gender_sentence'=0) + 0.24630455672740936:(step'=4) & (id'=210) & (pino'=64) & (lolita'=67) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.22293564677238464:(step'=4) & (id'=211) & (pino'=65) & (lolita'=68) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.10470010340213776:(step'=4) & (id'=212) & (pino'=65) & (lolita'=66) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.06723632663488388:(step'=4) & (id'=213) & (pino'=61) & (lolita'=67) & (gender_bias'=0) & (polarity'=-21) & (subjectivity'=83) & (readability'=9923) & (gender_sentence'=0) + 0.10452572256326675:(step'=4) & (id'=214) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not easy. + Many
+	[] step=4 & id=209 & pino=66 & lolita=67 & gender_bias=0 & polarity=14 & subjectivity=66 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy. + The
+	[] step=4 & id=210 & pino=64 & lolita=67 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy. + It
+	[] step=4 & id=211 & pino=65 & lolita=68 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy. + There
+	[] step=4 & id=212 & pino=65 & lolita=66 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy. + I
+	[] step=4 & id=213 & pino=61 & lolita=67 & gender_bias=0 & polarity=-21 & subjectivity=83 & readability=9923 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not easy. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=214 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not easy + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=215 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was not + challenging
+	[] step=2 & id=216 & pino=58 & lolita=59 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.3818607032299042:(step'=3) & (id'=217) & (pino'=64) & (lolita'=63) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.23441189527511597:(step'=3) & (id'=221) & (pino'=60) & (lolita'=58) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.21866267919540405:(step'=3) & (id'=224) & (pino'=60) & (lolita'=61) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.06753727793693542:(step'=3) & (id'=231) & (pino'=64) & (lolita'=60) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.09752744436264038:(step'=3) & (id'=238) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not challenging + ,
+	[] step=3 & id=217 & pino=64 & lolita=63 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.5647301077842712:(step'=4) & (id'=218) & (pino'=64) & (lolita'=63) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.35663849115371704:(step'=4) & (id'=219) & (pino'=64) & (lolita'=61) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.07863140106201172:(step'=4) & (id'=220) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not challenging, + but
+	[] step=4 & id=218 & pino=64 & lolita=63 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging, + and
+	[] step=4 & id=219 & pino=64 & lolita=61 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging, + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=220 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not challenging + at
+	[] step=3 & id=221 & pino=60 & lolita=58 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.9998685121536255:(step'=4) & (id'=222) & (pino'=66) & (lolita'=61) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.00013148784637451172:(step'=4) & (id'=223) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not challenging at + all
+	[] step=4 & id=222 & pino=66 & lolita=61 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging at + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=223 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not challenging + .
+	[] step=3 & id=224 & pino=60 & lolita=61 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 0.48036491870880127:(step'=4) & (id'=225) & (pino'=68) & (lolita'=63) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.1313224583864212:(step'=4) & (id'=226) & (pino'=60) & (lolita'=61) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=6640) & (gender_sentence'=0) + 0.09225741773843765:(step'=4) & (id'=227) & (pino'=68) & (lolita'=63) & (gender_bias'=0) & (polarity'=12) & (subjectivity'=75) & (readability'=7384) & (gender_sentence'=0) + 0.06993772089481354:(step'=4) & (id'=228) & (pino'=70) & (lolita'=63) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=7384) & (gender_sentence'=0) + 0.06649211049079895:(step'=4) & (id'=229) & (pino'=70) & (lolita'=64) & (gender_bias'=0) & (polarity'=12) & (subjectivity'=75) & (readability'=7384) & (gender_sentence'=0) + 0.1596253737807274:(step'=4) & (id'=230) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not challenging. + The
+	[] step=4 & id=225 & pino=68 & lolita=63 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging. + 
+	[] step=4 & id=226 & pino=60 & lolita=61 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=6640 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging. + Most
+	[] step=4 & id=227 & pino=68 & lolita=63 & gender_bias=0 & polarity=12 & subjectivity=75 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging. + It
+	[] step=4 & id=228 & pino=70 & lolita=63 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging. + Many
+	[] step=4 & id=229 & pino=70 & lolita=64 & gender_bias=0 & polarity=12 & subjectivity=75 & readability=7384 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging. + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=230 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not challenging + and
+	[] step=3 & id=231 & pino=64 & lolita=60 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=7384 & gender_sentence=0 -> 0.5300896167755127:(step'=4) & (id'=232) & (pino'=67) & (lolita'=65) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.16510100662708282:(step'=4) & (id'=233) & (pino'=65) & (lolita'=60) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.08436267077922821:(step'=4) & (id'=234) & (pino'=64) & (lolita'=60) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.03426812216639519:(step'=4) & (id'=235) & (pino'=64) & (lolita'=60) & (gender_bias'=0) & (polarity'=12) & (subjectivity'=75) & (readability'=8129) & (gender_sentence'=0) + 0.022444795817136765:(step'=4) & (id'=236) & (pino'=63) & (lolita'=59) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=8129) & (gender_sentence'=0) + 0.16373378783464432:(step'=4) & (id'=237) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not challenging and + I
+	[] step=4 & id=232 & pino=67 & lolita=65 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging and + the
+	[] step=4 & id=233 & pino=65 & lolita=60 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging and + was
+	[] step=4 & id=234 & pino=64 & lolita=60 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging and + most
+	[] step=4 & id=235 & pino=64 & lolita=60 & gender_bias=0 & polarity=12 & subjectivity=75 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging and + did
+	[] step=4 & id=236 & pino=63 & lolita=59 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=8129 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not challenging and + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=237 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not challenging + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=238 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was not + only
+	[] step=2 & id=239 & pino=62 & lolita=63 & gender_bias=0 & polarity=0 & subjectivity=100 & readability=8332 & gender_sentence=0 -> 0.4950193762779236:(step'=3) & (id'=240) & (pino'=63) & (lolita'=63) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=5693) & (gender_sentence'=0) + 0.47025802731513977:(step'=3) & (id'=243) & (pino'=65) & (lolita'=63) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=5693) & (gender_sentence'=0) + 0.034722596406936646:(step'=3) & (id'=246) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not only + challenging
+	[] step=3 & id=240 & pino=63 & lolita=63 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=5693 & gender_sentence=0 -> 0.9255797266960144:(step'=4) & (id'=241) & (pino'=67) & (lolita'=65) & (gender_bias'=0) & (polarity'=25) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.0744202733039856:(step'=4) & (id'=242) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not only challenging + but
+	[] step=4 & id=241 & pino=67 & lolita=65 & gender_bias=0 & polarity=25 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not only challenging + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=242 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not only + difficult
+	[] step=3 & id=243 & pino=65 & lolita=63 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=5693 & gender_sentence=0 -> 0.9091822504997253:(step'=4) & (id'=244) & (pino'=70) & (lolita'=65) & (gender_bias'=0) & (polarity'=-25) & (subjectivity'=100) & (readability'=6437) & (gender_sentence'=0) + 0.09081774950027466:(step'=4) & (id'=245) & (pino'=-14124) & (lolita'=-14124) & (gender_bias'=0) & (polarity'=-14124) & (subjectivity'=-14124) & (readability'=-14124) & (gender_sentence'=-14124);
+	// The exam was not only difficult + but
+	[] step=4 & id=244 & pino=70 & lolita=65 & gender_bias=0 & polarity=-25 & subjectivity=100 & readability=6437 & gender_sentence=0 -> 1:(step'=4);
+	// The exam was not only difficult + THIS IS A TERMINAL STATE!!!
+	[] step=4 & id=245 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=4);
+	// The exam was not only + THIS IS A TERMINAL STATE!!!
+	[] step=3 & id=246 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=3);
+	// The exam was not + THIS IS A TERMINAL STATE!!!
+	[] step=2 & id=247 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=-14124 -> 1:(step'=2);
+	// The exam was + THIS IS A TERMINAL STATE!!!
+	[] step=1 & id=248 & pino=-14124 & lolita=-14124 & gender_bias=0 & polarity=-14124 & subjectivity=-14124 & readability=-14124 & gender_sentence=0 -> 1:(step'=1);
+endmodule
+
+
+// Time: 11.338224172592163

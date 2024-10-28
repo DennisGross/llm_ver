@@ -1,0 +1,50 @@
+Storm 1.8.1
+
+Date: Fri Mar 29 13:50:36 2024
+Command line arguments: --prism google_gemma-2b-it_0.6_3_10_cuda_Our_story.prism --prop 'P=? [G readability>5997]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 0.182s.
+
+Time for model construction: 0.197s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	978
+Transitions: 	1605
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (readability > 5997) -> 617 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G (readability > 5997)] ...
+Result (for initial states): 0.01584996222
+Time for model checking: 0.001s.
+Storm 1.8.1
+
+Date: Fri Mar 29 13:50:36 2024
+Command line arguments: --prism meta-llama_Llama-2-7b-hf_0.6_3_10_cuda_Our_story.prism --prop 'P=? [G readability>5997]'
+Current working directory: /global/D1/homes/dennis/llm_formal_verification/prism_files
+
+Time for model input parsing: 6.563s.
+
+Time for model construction: 85.508s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	20953
+Transitions: 	35889
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (readability > 5997) -> 14727 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G (readability > 5997)] ...
+Result (for initial states): 7.12689511e-05
+Time for model checking: 0.006s.
